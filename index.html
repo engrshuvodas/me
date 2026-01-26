@@ -460,41 +460,439 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="section" id="testimonials">
+
+    <!-- Testimonials / Reviews Section -->
+    <section class="reviews-section" id="testimonials">
         <div class="container">
             <div class="section-title">
                 <span>Testimonials</span>
                 <h2>What Clients Say</h2>
             </div>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <div class="client-img">
-                        <img src="./assets/images/Shamim Reza.png" alt="Shamim Reza">
+
+            <!-- Row 1: Right to Left -->
+            <div class="review-row marquee-row-1">
+                <div class="marquee-track">
+                    <!-- Cards will be populated here -->
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="Renata Silva"
+                        data-role="Freelance Web Developer" data-flag="🇧🇷" data-stars="5"
+                        data-image="./assets/images/Susmita Kundu.png"
+                        data-text="My clients now get updates instantly. No more manual sending! This tool has completely automated my workflow and saved me hours every week. Highly recommended!">
+                        <div class="client-header">
+                            <img src="./assets/images/Susmita Kundu.png" alt="Renata Silva" class="review-avatar">
+                            <div class="client-info">
+                                <h4>Renata Silva <span class="flag">🇧🇷</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">Freelance Web Developer</span>
+                            </div>
+                        </div>
+                        <p class="review-text">My clients now get updates instantly. No more manual sending! This tool
+                            has completely automated my workflow and saved me hours every week. Highly recommended!</p>
+                        <span class="read-more-link">Read more</span>
                     </div>
-                    <p class="testimonial-text">"Working with this web developer has been an absolute pleasure. Their
-                        expertise and attention to detail are truly impressive. They delivered a beautifully designed
-                        and fully functional website that exceeded my expectations."</p>
-                    <span class="client-name">Shamim Reza</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="client-img">
-                        <img src="./assets/images/Shuvankar Halder.png" alt="Shuvankar Halder">
+
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="Amina El Fassi"
+                        data-role="Event Organizer" data-flag="🇲🇦" data-stars="5"
+                        data-image="./assets/images/Shamim Reza.png"
+                        data-text="Perfect for event reminders and ticket promotions. Love the file attachment feature! It allows me to send e-tickets directly to attendees seamlessly.">
+                        <div class="client-header">
+                            <img src="./assets/images/Shamim Reza.png" alt="Amina El Fassi" class="review-avatar">
+                            <div class="client-info">
+                                <h4>Amina El Fassi <span class="flag">🇲🇦</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">Event Organizer</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Perfect for event reminders and ticket promotions. Love the file
+                            attachment feature! It allows me to send e-tickets directly to attendees seamlessly.</p>
+                        <span class="read-more-link">Read more</span>
                     </div>
-                    <p class="testimonial-text">"Collaborating with this web developer has been a game-changer for my
-                        online business. They transformed my vision into a stunning website that is both visually
-                        appealing and user-friendly."</p>
-                    <span class="client-name">Shuvankar Halder</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="client-img">
-                        <img src="./assets/images/Susmita Kundu.png" alt="Susmita Kundu">
+
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="Rafiq Islam"
+                        data-role="Social Media Manager" data-flag="🇧🇩" data-stars="5"
+                        data-image="./assets/images/Shuvankar Halder.png"
+                        data-text="Now I can easily manage multiple client accounts from one dashboard. Lifesaver! The interface is intuitive and the support from Shuvo is top-notch.">
+                        <div class="client-header">
+                            <img src="./assets/images/Shuvankar Halder.png" alt="Rafiq Islam" class="review-avatar">
+                            <div class="client-info">
+                                <h4>Rafiq Islam <span class="flag">🇧🇩</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">Social Media Manager</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Now I can easily manage multiple client accounts from one dashboard.
+                            Lifesaver! The interface is intuitive and the support from Shuvo is top-notch.</p>
+                        <span class="read-more-link">Read more</span>
                     </div>
-                    <p class="testimonial-text">"I had the pleasure of working with this talented web developer, and I
-                        am blown away by the results. They brought my ideas to life with an exceptional website that
-                        perfectly represents my brand."</p>
-                    <span class="client-name">Susmita Kundu</span>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="Khalid Al Nahyan"
+                        data-role="Business Owner" data-flag="🇦🇪" data-stars="5"
+                        data-image="./assets/images/Shamim Reza.png"
+                        data-text="Support is always quick and helpful. That's key for any small business owner. The software serves exactly the purpose I needed it for.">
+                        <div class="client-header">
+                            <img src="./assets/images/Shamim Reza.png" alt="Khalid Al Nahyan" class="review-avatar">
+                            <div class="client-info">
+                                <h4>Khalid Al Nahyan <span class="flag">🇦🇪</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">Business Owner</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Support is always quick and helpful. That's key for any small business
+                            owner. The software serves exactly the purpose I needed it for.</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
                 </div>
+                <!-- Duplicate for loop -->
+                <div class="marquee-track">
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="Renata Silva"
+                        data-role="Freelance Web Developer" data-flag="🇧🇷" data-stars="5"
+                        data-image="./assets/images/Susmita Kundu.png"
+                        data-text="My clients now get updates instantly. No more manual sending! This tool has completely automated my workflow and saved me hours every week. Highly recommended!">
+                        <div class="client-header">
+                            <img src="./assets/images/Susmita Kundu.png" alt="Renata Silva" class="review-avatar">
+                            <div class="client-info">
+                                <h4>Renata Silva <span class="flag">🇧🇷</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">Freelance Web Developer</span>
+                            </div>
+                        </div>
+                        <p class="review-text">My clients now get updates instantly. No more manual sending! This tool
+                            has completely automated my workflow and saved me hours every week. Highly recommended!</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="Amina El Fassi"
+                        data-role="Event Organizer" data-flag="🇲🇦" data-stars="5"
+                        data-image="./assets/images/Shamim Reza.png"
+                        data-text="Perfect for event reminders and ticket promotions. Love the file attachment feature! It allows me to send e-tickets directly to attendees seamlessly.">
+                        <div class="client-header">
+                            <img src="./assets/images/Shamim Reza.png" alt="Amina El Fassi" class="review-avatar">
+                            <div class="client-info">
+                                <h4>Amina El Fassi <span class="flag">🇲🇦</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">Event Organizer</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Perfect for event reminders and ticket promotions. Love the file
+                            attachment feature! It allows me to send e-tickets directly to attendees seamlessly.</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="Rafiq Islam"
+                        data-role="Social Media Manager" data-flag="🇧🇩" data-stars="5"
+                        data-image="./assets/images/Shuvankar Halder.png"
+                        data-text="Now I can easily manage multiple client accounts from one dashboard. Lifesaver! The interface is intuitive and the support from Shuvo is top-notch.">
+                        <div class="client-header">
+                            <img src="./assets/images/Shuvankar Halder.png" alt="Rafiq Islam" class="review-avatar">
+                            <div class="client-info">
+                                <h4>Rafiq Islam <span class="flag">🇧🇩</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">Social Media Manager</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Now I can easily manage multiple client accounts from one dashboard.
+                            Lifesaver! The interface is intuitive and the support from Shuvo is top-notch.</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="Khalid Al Nahyan"
+                        data-role="Business Owner" data-flag="🇦🇪" data-stars="5"
+                        data-image="./assets/images/Shamim Reza.png"
+                        data-text="Support is always quick and helpful. That's key for any small business owner. The software serves exactly the purpose I needed it for.">
+                        <div class="client-header">
+                            <img src="./assets/images/Shamim Reza.png" alt="Khalid Al Nahyan" class="review-avatar">
+                            <div class="client-info">
+                                <h4>Khalid Al Nahyan <span class="flag">🇦🇪</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">Business Owner</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Support is always quick and helpful. That's key for any small business
+                            owner. The software serves exactly the purpose I needed it for.</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Left to Right -->
+            <div class="review-row marquee-row-2">
+                <div class="marquee-track">
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="John Doe"
+                        data-role="SaaS Founder" data-flag="🇺🇸" data-stars="5"
+                        data-image="./assets/images/Shuvankar Halder.png"
+                        data-text="WASendX has helped us scale our cold outreach by 10x. The anti-ban tech actually works, haven't had issues in months.">
+                        <div class="client-header">
+                            <img src="./assets/images/Shuvankar Halder.png" alt="John Doe" class="review-avatar">
+                            <div class="client-info">
+                                <h4>John Doe <span class="flag">🇺🇸</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">SaaS Founder</span>
+                            </div>
+                        </div>
+                        <p class="review-text">WASendX has helped us scale our cold outreach by 10x. The anti-ban tech
+                            actually works, haven't had issues in months.</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="Emily Chan"
+                        data-role="Restaurant Owner" data-flag="🇭🇰" data-stars="5"
+                        data-image="./assets/images/Susmita Kundu.png"
+                        data-text="I own a local restaurant. WasendX is perfect for sending daily menus & offers. My customers love getting updates on WhatsApp!">
+                        <div class="client-header">
+                            <img src="./assets/images/Susmita Kundu.png" alt="Emily Chan" class="review-avatar">
+                            <div class="client-info">
+                                <h4>Emily Chan <span class="flag">🇭🇰</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">Restaurant Owner</span>
+                            </div>
+                        </div>
+                        <p class="review-text">I own a local restaurant. WasendX is perfect for sending daily menus &
+                            offers. My customers love getting updates on WhatsApp!</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="Leonie Müller"
+                        data-role="Digital Marketer" data-flag="🇩🇪" data-stars="5"
+                        data-image="./assets/images/Shamim Reza.png"
+                        data-text="I sell digital services and needed a fast way to reach clients — this is exactly that! Efficient, fast, and very reliable software.">
+                        <div class="client-header">
+                            <img src="./assets/images/Shamim Reza.png" alt="Leonie Müller" class="review-avatar">
+                            <div class="client-info">
+                                <h4>Leonie Müller <span class="flag">🇩🇪</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">Digital Marketer</span>
+                            </div>
+                        </div>
+                        <p class="review-text">I sell digital services and needed a fast way to reach clients — this is
+                            exactly that! Efficient, fast, and very reliable software.</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="David Smith"
+                        data-role="Real Estate" data-flag="🇬🇧" data-stars="5"
+                        data-image="./assets/images/Shuvankar Halder.png"
+                        data-text="Great for following up with leads. Simple and effective. Has improved our conversion rates significantly since we started using it.">
+                        <div class="client-header">
+                            <img src="./assets/images/Shuvankar Halder.png" alt="David Smith" class="review-avatar">
+                            <div class="client-info">
+                                <h4>David Smith <span class="flag">🇬🇧</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">Real Estate</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Great for following up with leads. Simple and effective. Has improved our
+                            conversion rates significantly since we started using it.</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                </div>
+                <!-- Duplicate for loop -->
+                <div class="marquee-track">
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="John Doe"
+                        data-role="SaaS Founder" data-flag="🇺🇸" data-stars="5"
+                        data-image="./assets/images/Shuvankar Halder.png"
+                        data-text="WASendX has helped us scale our cold outreach by 10x. The anti-ban tech actually works, haven't had issues in months.">
+                        <div class="client-header">
+                            <img src="./assets/images/Shuvankar Halder.png" alt="John Doe" class="review-avatar">
+                            <div class="client-info">
+                                <h4>John Doe <span class="flag">🇺🇸</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">SaaS Founder</span>
+                            </div>
+                        </div>
+                        <p class="review-text">WASendX has helped us scale our cold outreach by 10x. The anti-ban tech
+                            actually works, haven't had issues in months.</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="Emily Chan"
+                        data-role="Restaurant Owner" data-flag="🇭🇰" data-stars="5"
+                        data-image="./assets/images/Susmita Kundu.png"
+                        data-text="I own a local restaurant. WasendX is perfect for sending daily menus & offers. My customers love getting updates on WhatsApp!">
+                        <div class="client-header">
+                            <img src="./assets/images/Susmita Kundu.png" alt="Emily Chan" class="review-avatar">
+                            <div class="client-info">
+                                <h4>Emily Chan <span class="flag">🇭🇰</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">Restaurant Owner</span>
+                            </div>
+                        </div>
+                        <p class="review-text">I own a local restaurant. WasendX is perfect for sending daily menus &
+                            offers. My customers love getting updates on WhatsApp!</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="Leonie Müller"
+                        data-role="Digital Marketer" data-flag="🇩🇪" data-stars="5"
+                        data-image="./assets/images/Shamim Reza.png"
+                        data-text="I sell digital services and needed a fast way to reach clients — this is exactly that! Efficient, fast, and very reliable software.">
+                        <div class="client-header">
+                            <img src="./assets/images/Shamim Reza.png" alt="Leonie Müller" class="review-avatar">
+                            <div class="client-info">
+                                <h4>Leonie Müller <span class="flag">🇩🇪</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">Digital Marketer</span>
+                            </div>
+                        </div>
+                        <p class="review-text">I sell digital services and needed a fast way to reach clients — this is
+                            exactly that! Efficient, fast, and very reliable software.</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="David Smith"
+                        data-role="Real Estate" data-flag="🇬🇧" data-stars="5"
+                        data-image="./assets/images/Shuvankar Halder.png"
+                        data-text="Great for following up with leads. Simple and effective. Has improved our conversion rates significantly since we started using it.">
+                        <div class="client-header">
+                            <img src="./assets/images/Shuvankar Halder.png" alt="David Smith" class="review-avatar">
+                            <div class="client-info">
+                                <h4>David Smith <span class="flag">🇬🇧</span></h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="client-role">Real Estate</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Great for following up with leads. Simple and effective. Has improved our
+                            conversion rates significantly since we started using it.</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Review Modal -->
+    <div class="review-modal" id="reviewModal" onclick="closeReviewModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="modal-close" onclick="closeReviewModal(event)">&times;</span>
+            <div class="modal-body">
+                <div class="modal-header-info">
+                    <img src="" alt="" id="modalImg" class="modal-avatar">
+                    <div class="modal-client-details">
+                        <h3 id="modalName"></h3>
+                        <span class="modal-role" id="modalRole"></span>
+                    </div>
+                </div>
+                <div class="modal-stars" id="modalStars"></div>
+                <!-- <div class="modal-flag" id="modalFlag"></div> -->
+                <p class="modal-text" id="modalText"></p>
+                <a href="https://www.fiverr.com/shuvo_das74886" target="_blank" class="fiverr-btn">View on Fiverr</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <div class="section-title">
+                <span>Latest News</span>
+                <h2>My Recent Articles</h2>
+            </div>
+            <div class="blog-grid">
+
+                <div class="blog-card">
+                    <a href="blog-details.html">
+                        <div class="blog-banner-box">
+                            <img src="./assets/images/blog/wasender details.jpg" alt="Boost Sales with Bulk Msg">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Marketing</span>
+                                <span class="dot"></span>
+                                <time>Feb 23, 2022</time>
+                            </div>
+                            <h3 class="blog-item-title">Boost Sales with Bulk Msg WhatsApp Marketing</h3>
+                            <p class="blog-text">Reach More Customers Instantly with Personalized Messaging. Learn the
+                                strategies that drive engagement.</p>
+                            <span class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="blog-card">
+                    <a href="blog-details.html">
+                        <div class="blog-banner-box">
+                            <img src="./assets/images/blog/black google map.jpg" alt="Google Maps Data Scraping">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Marketing</span>
+                                <span class="dot"></span>
+                                <time>Mar 28, 2022</time>
+                            </div>
+                            <h3 class="blog-item-title">Unlock 1000+ Verified Leads with Google Maps</h3>
+                            <p class="blog-text">Get Business Names, Contacts, Emails, Websites & More – Efficiently and
+                                Accurately!</p>
+                            <span class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="blog-card">
+                    <a href="blog-details.html">
+                        <div class="blog-banner-box">
+                            <img src="./assets/images/blog/All Features.png" alt="Wasender Tools">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Tools</span>
+                                <span class="dot"></span>
+                                <time>Nov 17, 2023</time>
+                            </div>
+                            <h3 class="blog-item-title">Unlock Wasender’s WhatsApp Marketing Tools</h3>
+                            <p class="blog-text">Discover How Wasender’s Bulk Messaging and Lead Tools Can Supercharge
+                                Your Marketing.</p>
+                            <span class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="blog-card">
+                    <a href="blog-details.html">
+                        <div class="blog-banner-box">
+                            <img src="./assets/images/blog/Whatsapp numbers to generate leads.png"
+                                alt="Lead Collection">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Marketing</span>
+                                <span class="dot"></span>
+                                <time>Feb 23, 2022</time>
+                            </div>
+                            <h3 class="blog-item-title">How to Collect Leads and Filter WhatsApp Accounts</h3>
+                            <p class="blog-text">Effective WhatsApp Lead Collection and Filtering Strategies for Target
+                                Audiences.</p>
+                            <span class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>

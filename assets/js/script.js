@@ -13,7 +13,7 @@ if (savedTheme) {
 themeToggle.addEventListener('click', () => {
     const currentTheme = body.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
+
     body.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     updateIcon(newTheme);
@@ -35,7 +35,7 @@ const navLinks = document.querySelector('.nav-links');
 
 mobileMenuBtn.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-    
+
     // Animate burger to close icon (optional, just simple toggle for now)
     const icon = mobileMenuBtn.querySelector('i');
     if (navLinks.classList.contains('active')) {
@@ -93,7 +93,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
-        
+
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             window.scrollTo({
@@ -103,3 +103,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// REVIEW MODAL LOGIC
+function openReviewModal(card) {
+    const modal = document.getElementById('reviewModal');
+    const name = card.getAttribute('data-name');
+    const role = card.getAttribute('data-role');
+    const text = card.getAttribute('data-text');
+    const image = card.getAttribute('data-image');
+    const stars = parseInt(card.getAttribute('data-stars'));
+    // const flag = card.getAttribute('data-flag');
+
+    document.getElementById('modalName').innerText = name + " "; // + flag;
+    document.getElementById('modalRole').innerText = role;
+    document.getElementById('modalText').innerText = text;
+    document.getElementById('modalImg').src = image;
+
+    const starsContainer = document.getElementById('modalStars');
+    starsContainer.innerHTML = '';
+    for (let i = 0; i < stars; i++) {
+        const star = document.createElement('i');
+        star.className = 'fas fa-star';
+        starsContainer.appendChild(star);
+    }
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closeReviewModal(event) {
+    const modal = document.getElementById('reviewModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto'; // Restore scrolling
+}
