@@ -1344,9 +1344,80 @@ footer {
         font-size: 0.9rem;
     }
 
-    .contact-info-item {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-    }
+
+
+}
+
+/* Updated Client Header for Reviews */
+.client-header {
+    margin-bottom: 5px !important;
+    /* Tighten gap */
+}
+
+.client-info h4 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    /* Space between name and separator */
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+/* Name Row - contains Name and Repeat Badge */
+.name-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.repeat-separator {
+    color: var(--text-light);
+    font-size: 0.8rem;
+    margin: 0 6px;
+}
+
+.repeat-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.repeat-badge i {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* Review Country Row */
+.country-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Space between Flag and Country Name */
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-top: 0px;
+    width: 100%;
+}
+
+.country-row .flag {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* Ensure Avatar alignment */
+.review-card .client-header {
+    align-items: flex-start;
+    /* Align to top to handle multi-line names */
+}
+
+.review-card .review-avatar {
+    margin-top: 4px;
+    /* Slight offset */
 }
